@@ -11,7 +11,7 @@ import ObjectMapper
 class User : Mappable {
   
   var name : String?
-  var age : String?
+  var age : Int?
   var city : String?
   
   required init?(map: Map) {

@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     let json_str = """
         {"name": "John", "age" : 31, "city" : "New York"}
     """
+    
+    let user = User(JSONString: json_str)
+    print((user?.name)!)
+    print((user?.age)!)
+    print((user?.city)!)
   }
 
 
