@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		0F077A4825794AB100C6F932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F077A4625794AB100C6F932 /* Main.storyboard */; };
 		0F077A4A25794AB300C6F932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F077A4925794AB300C6F932 /* Assets.xcassets */; };
 		0F077A4D25794AB300C6F932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F077A4B25794AB300C6F932 /* LaunchScreen.storyboard */; };
+		0F077A5A25794D6200C6F932 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F077A5925794D6100C6F932 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0F077A4925794AB300C6F932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F077A4C25794AB300C6F932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F077A4E25794AB300C6F932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F077A5925794D6100C6F932 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30278B0D71E9535FD28C18D2 /* Pods-ObjectMapperPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectMapperPractice.debug.xcconfig"; path = "Target Support Files/Pods-ObjectMapperPractice/Pods-ObjectMapperPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		4030DB48FAF9398121715F91 /* Pods_ObjectMapperPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectMapperPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7C182A65941DD043AF8576 /* Pods-ObjectMapperPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectMapperPractice.release.xcconfig"; path = "Target Support Files/Pods-ObjectMapperPractice/Pods-ObjectMapperPractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				0F077A4025794AB100C6F932 /* AppDelegate.swift */,
 				0F077A4225794AB100C6F932 /* SceneDelegate.swift */,
 				0F077A4425794AB100C6F932 /* ViewController.swift */,
+				0F077A5925794D6100C6F932 /* User.swift */,
 				0F077A4625794AB100C6F932 /* Main.storyboard */,
 				0F077A4925794AB300C6F932 /* Assets.xcassets */,
 				0F077A4B25794AB300C6F932 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				30278B0D71E9535FD28C18D2 /* Pods-ObjectMapperPractice.debug.xcconfig */,
 				5E7C182A65941DD043AF8576 /* Pods-ObjectMapperPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F077A5A25794D6200C6F932 /* User.swift in Sources */,
 				0F077A4525794AB100C6F932 /* ViewController.swift in Sources */,
 				0F077A4125794AB100C6F932 /* AppDelegate.swift in Sources */,
 				0F077A4325794AB100C6F932 /* SceneDelegate.swift in Sources */,

@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    let json_str = """
+        {"name": "John", "age" : 31, "city" : "New York"}
+    """
   }
 
 
