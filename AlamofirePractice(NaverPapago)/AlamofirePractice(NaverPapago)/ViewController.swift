@@ -22,8 +22,9 @@ class ViewController: UIViewController {
                   "X-Naver-Client-Id":"s1rLaCZwXZr0ucfihipC",
                   "X-Naver-Client-Secret":"UBztJN1c8F"]
     
-    Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: header).responseJSON { (response) in
-      print(response.result.value)
+    Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: header).responseObject { (response : DataResponse<PapagoDTO>) in  // < > 안에는 어떤 클래스를 받을건지 입력해준다
+      var papagoDTO = response.result.value
+      print(papagoDTO?.message?.result?.translatedText)
     }
   }
 
