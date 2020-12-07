@@ -1,0 +1,6 @@
+framework module Pods_AlamofirePractice_NaverPapago_ {
+  umbrella header "Pods-AlamofirePractice(NaverPapago)-umbrella.h"
+
+  export *
+  module * { export * }
+}
