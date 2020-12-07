@@ -12,7 +12,7 @@ import AlamofireObjectMapper
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
-    super.viewDidLoad()
+    super.viewDidLoad()A
     
     var url = "https://openapi.naver.com/v1/papago/n2mt"
     var params = ["source":"ko",
