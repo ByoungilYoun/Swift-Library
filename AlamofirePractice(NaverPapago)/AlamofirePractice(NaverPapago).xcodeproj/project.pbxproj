@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -88,7 +88,6 @@
 				2752AF05057C3F0366730710 /* Pods-AlamofirePractice(NaverPapago).debug.xcconfig */,
 				BDD9F1BDCFAEFCECDEF40316 /* Pods-AlamofirePractice(NaverPapago).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
