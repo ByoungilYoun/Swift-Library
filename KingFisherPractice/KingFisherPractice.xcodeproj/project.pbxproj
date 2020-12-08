@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F20E78A257FD9330074AD5A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20E789257FD9330074AD5A /* Images.swift */; };
 		0FF50CE7257FD2FB001D928B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CE6257FD2FB001D928B /* AppDelegate.swift */; };
 		0FF50CE9257FD2FB001D928B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */; };
 		0FF50CEB257FD2FB001D928B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CEA257FD2FB001D928B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F20E789257FD9330074AD5A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0FF50CE3257FD2FB001D928B /* KingFisherPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingFisherPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF50CE6257FD2FB001D928B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				0FF50CE6257FD2FB001D928B /* AppDelegate.swift */,
 				0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */,
+				0F20E789257FD9330074AD5A /* Images.swift */,
 				0FF50CEA257FD2FB001D928B /* ViewController.swift */,
 				0FF50CEC257FD2FB001D928B /* Main.storyboard */,
 				0FF50CEF257FD2FC001D928B /* Assets.xcassets */,
@@ -80,7 +83,6 @@
 				F20E7F4F6D4A45E02BF8BCF7 /* Pods-KingFisherPractice.debug.xcconfig */,
 				4F449315881AF51378A8322E /* Pods-KingFisherPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF50CEB257FD2FB001D928B /* ViewController.swift in Sources */,
+				0F20E78A257FD9330074AD5A /* Images.swift in Sources */,
 				0FF50CE7257FD2FB001D928B /* AppDelegate.swift in Sources */,
 				0FF50CE9257FD2FB001D928B /* SceneDelegate.swift in Sources */,
 			);
