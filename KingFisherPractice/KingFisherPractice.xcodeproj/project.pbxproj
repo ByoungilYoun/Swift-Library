@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F20E78A257FD9330074AD5A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20E789257FD9330074AD5A /* Images.swift */; };
+		0F20E79F257FDF800074AD5A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20E79E257FDF800074AD5A /* CustomCell.swift */; };
 		0FF50CE7257FD2FB001D928B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CE6257FD2FB001D928B /* AppDelegate.swift */; };
 		0FF50CE9257FD2FB001D928B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */; };
 		0FF50CEB257FD2FB001D928B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF50CEA257FD2FB001D928B /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0F20E789257FD9330074AD5A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		0F20E79E257FDF800074AD5A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		0FF50CE3257FD2FB001D928B /* KingFisherPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingFisherPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF50CE6257FD2FB001D928B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0FF50CE8257FD2FB001D928B /* SceneDelegate.swift */,
 				0F20E789257FD9330074AD5A /* Images.swift */,
 				0FF50CEA257FD2FB001D928B /* ViewController.swift */,
+				0F20E79E257FDF800074AD5A /* CustomCell.swift */,
 				0FF50CEC257FD2FB001D928B /* Main.storyboard */,
 				0FF50CEF257FD2FC001D928B /* Assets.xcassets */,
 				0FF50CF1257FD2FC001D928B /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			files = (
 				0FF50CEB257FD2FB001D928B /* ViewController.swift in Sources */,
 				0F20E78A257FD9330074AD5A /* Images.swift in Sources */,
+				0F20E79F257FDF800074AD5A /* CustomCell.swift in Sources */,
 				0FF50CE7257FD2FB001D928B /* AppDelegate.swift in Sources */,
 				0FF50CE9257FD2FB001D928B /* SceneDelegate.swift in Sources */,
 			);
