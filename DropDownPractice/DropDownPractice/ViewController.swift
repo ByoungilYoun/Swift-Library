@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DropDown
 
 class ViewController: UIViewController {
 
@@ -18,9 +19,12 @@ class ViewController: UIViewController {
     return bt
   }()
     
+  var dropDown : DropDown?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     configureUI()
+    makeDropDown()
   }
 
 
@@ -33,6 +37,30 @@ class ViewController: UIViewController {
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
     ])
+  }
+  
+  private func makeDropDown() {
+    dropDown = DropDown()
+    
+    // The view to which the drop down will appear on
+    dropDown?.anchorView = button // UIView or UIBarButtonItem
+    
+    // 버튼 바로 밑으로 안가려지게 나타나게 하는 bottomOffset
+    dropDown?.bottomOffset = CGPoint(x: 0, y: (dropDown?.anchorView?.plainView.bounds.height)! + 40)
+    // The list of items to display. Can be changed dynamically
+    dropDown?.dataSource = ["Car", "Motorcycle", "Truck"]
+    // Do any additional setup after loading the view, typically from a nib
+    
+    button.addTarget(self, action: #selector(dropDownButton), for: .touchUpInside)
+    
+    dropDown?.selectionAction = { [unowned self] (index : Int, item : String) in
+      button.setTitle(item, for: .normal)
+    }
+    
+  }
+  
+  @objc func dropDownButton() {
+    dropDown?.show()
   }
 }
 
