@@ -71,6 +71,8 @@ class ViewController: UIViewController {
     let chartData = BarChartData(dataSet: chartDataSet)
     // 뷰에 데이터를 넣어준다.
     barChartView.data = chartData
+    barChartView.xAxis.labelPosition = .bottom
+    barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
           
   }
 
