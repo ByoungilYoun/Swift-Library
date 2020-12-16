@@ -77,7 +77,10 @@ class ViewController: UIViewController {
     barChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
     // 차트뷰 애니메이션. eadingOption 은 여러가지가 있다.
     barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
-          
+      
+    // 내가 원하는 target 을 설정할 수 있다. 
+    let ll = ChartLimitLine(limit: 10.0, label: "Target")
+    barChartView.rightAxis.addLimitLine(ll)
   }
 
 }
