@@ -75,7 +75,8 @@ class ViewController: UIViewController {
     barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
     // 차트뷰의 backgroundColor 설정
     barChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
-
+    // 차트뷰 애니메이션. eadingOption 은 여러가지가 있다.
+    barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
           
   }
 
