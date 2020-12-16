@@ -31,6 +31,8 @@ class ViewController: UIViewController {
       let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
             
       setChart(dataPoints: months, values: unitsSold)
+    
+    barChartView.delegate = self
   }
 
   //MARK: - configureUI()
@@ -78,10 +80,17 @@ class ViewController: UIViewController {
     // 차트뷰 애니메이션. eadingOption 은 여러가지가 있다.
     barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .linear)
       
-    // 내가 원하는 target 을 설정할 수 있다. 
+    // 내가 원하는 target 을 설정할 수 있다.
     let ll = ChartLimitLine(limit: 10.0, label: "Target")
     barChartView.rightAxis.addLimitLine(ll)
   }
 
 }
 
+//MARK: - ChartViewDelegate
+extension ViewController : ChartViewDelegate {
+  // 클릭이벤트 
+  func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+    print("\(entry.y) in \(months[Int(entry.x)])")
+  }
+}
