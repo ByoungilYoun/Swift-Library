@@ -65,9 +65,11 @@ class ViewController: UIViewController {
             
     // 차트 데이터 셋트에 넣어주고
     let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Units Sold")
+    // 차트 색 여러가지 나타내기
+    chartDataSet.colors = ChartColorTemplates.colorful()
     // 그걸 다시 차트 데이터에 넣어주고
     let chartData = BarChartData(dataSet: chartDataSet)
-    // 뷰에 데이터를 넣어준다. 
+    // 뷰에 데이터를 넣어준다.
     barChartView.data = chartData
           
   }
