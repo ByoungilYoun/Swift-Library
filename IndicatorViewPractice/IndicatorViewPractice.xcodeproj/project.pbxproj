@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		0F5E93C3258D106F00A42F92 /* IndicatorViewPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F5E93C1258D106F00A42F92 /* IndicatorViewPractice.xcdatamodeld */; };
 		0F5E93C5258D106F00A42F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E93C4258D106F00A42F92 /* Assets.xcassets */; };
 		0F5E93C8258D106F00A42F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E93C6258D106F00A42F92 /* LaunchScreen.storyboard */; };
+		0FB4339F258D13060029B686 /* NextPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB4339E258D13060029B686 /* NextPageViewController.swift */; };
 		AC45B09522DE9CAC4686404C /* Pods_IndicatorViewPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CF64C9C4566F0A1F3E4032 /* Pods_IndicatorViewPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0F5E93C4258D106F00A42F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5E93C7258D106F00A42F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5E93C9258D106F00A42F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB4339E258D13060029B686 /* NextPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageViewController.swift; sourceTree = "<group>"; };
 		10CF64C9C4566F0A1F3E4032 /* Pods_IndicatorViewPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndicatorViewPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFEB358DFEEED8A3048956B /* Pods-IndicatorViewPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndicatorViewPractice.release.xcconfig"; path = "Target Support Files/Pods-IndicatorViewPractice/Pods-IndicatorViewPractice.release.xcconfig"; sourceTree = "<group>"; };
 		4C8E70A6A61F0A32184D3841 /* Pods-IndicatorViewPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndicatorViewPractice.debug.xcconfig"; path = "Target Support Files/Pods-IndicatorViewPractice/Pods-IndicatorViewPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0F5E93B8258D106F00A42F92 /* AppDelegate.swift */,
 				0F5E93BA258D106F00A42F92 /* SceneDelegate.swift */,
 				0F5E93BC258D106F00A42F92 /* ViewController.swift */,
+				0FB4339E258D13060029B686 /* NextPageViewController.swift */,
 				0F5E93BE258D106F00A42F92 /* Main.storyboard */,
 				0F5E93C4258D106F00A42F92 /* Assets.xcassets */,
 				0F5E93C6258D106F00A42F92 /* LaunchScreen.storyboard */,
@@ -83,7 +86,6 @@
 				4C8E70A6A61F0A32184D3841 /* Pods-IndicatorViewPractice.debug.xcconfig */,
 				1EFEB358DFEEED8A3048956B /* Pods-IndicatorViewPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +215,7 @@
 				0F5E93C3258D106F00A42F92 /* IndicatorViewPractice.xcdatamodeld in Sources */,
 				0F5E93B9258D106F00A42F92 /* AppDelegate.swift in Sources */,
 				0F5E93BB258D106F00A42F92 /* SceneDelegate.swift in Sources */,
+				0FB4339F258D13060029B686 /* NextPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

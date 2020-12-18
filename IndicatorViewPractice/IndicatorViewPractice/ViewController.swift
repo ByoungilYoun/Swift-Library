@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
 
   //MARK: - Properties
   private let button : UIButton = {
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     return bt
   }()
   
+  let indicator = NVActivityIndicatorView(frame: CGRect(x: 162, y: 100, width: 50, height: 59), type: .circleStrokeSpin, color: .black, padding: 0)
+  
   //MARK: - LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,21 +30,29 @@ class ViewController: UIViewController {
 
   //MARK: - configureUI()
   private func configureUI() {
-    view.addSubview(button)
-    
-    button.translatesAutoresizingMaskIntoConstraints = false
+    [button, indicator].forEach {
+      view.addSubview($0)
+      $0.translatesAutoresizingMaskIntoConstraints = false
+    }
     
     NSLayoutConstraint.activate([
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
       button.widthAnchor.constraint(equalToConstant: 80),
-      button.heightAnchor.constraint(equalToConstant: 50)
+      button.heightAnchor.constraint(equalToConstant: 50),
+      
+      indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
     ])
   }
 
   //MARK: - @objc func
   @objc func buttonTapped() {
-    print("123")
+      self.indicator.startAnimating()
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+       let controller = NextPageViewController()
+      self.present(controller, animated: true, completion: nil)
+    }
   }
 }
-
