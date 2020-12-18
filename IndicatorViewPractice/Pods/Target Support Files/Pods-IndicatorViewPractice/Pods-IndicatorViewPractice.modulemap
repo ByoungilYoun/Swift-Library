@@ -1,0 +1,6 @@
+framework module Pods_IndicatorViewPractice {
+  umbrella header "Pods-IndicatorViewPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
