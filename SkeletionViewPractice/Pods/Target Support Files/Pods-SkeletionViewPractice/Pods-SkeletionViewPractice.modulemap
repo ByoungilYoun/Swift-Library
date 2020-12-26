@@ -1,0 +1,6 @@
+framework module Pods_SkeletionViewPractice {
+  umbrella header "Pods-SkeletionViewPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
